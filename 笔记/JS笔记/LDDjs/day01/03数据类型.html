@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* var a=123;
+			var b="abc";
+			var c=true; */
+			/* 数据类型:
+			  数据类型就是字面量的类型
+			   -JS中一共有六种数据类型
+					1. String  字符串
+					2. Number 数值
+					3.Boolean  布尔
+					4.Null  空值
+					5.Undefined  未定义
+					6.Object  对象
+				 其中Object是引用数据类型,其他五种都是基本数据类型 
+				 
+			*/
+		   //String字符串
+		  /* 1.字符串需要用引号引起来 
+		     2.单引号和双引号都可以  但是不能混着用 
+			 3.引号嵌套使用  单引不能套单引  双引不能套双引
+			 4.使用 \来表示转移字符
+			   转移：   \'
+				        \"
+				         \n  换行
+				         \t  制表符
+				         \\
+		  */
+		    var str="abcdef";
+			str='123456';
+			str="老师说:'咋们大概是一月份放假，二月份开学'";
+			str="老师说:\"咋们大概是一月份放假，t二月份开学\"";
+			str="\\\\";
+			console.log(str);
+			
+			//可以使用一个运算符typeof 来检查一个数据类型
+			//语法:typeof 变量名;
+			
+			var str1=123;
+			var str2="123";
+			console.log(typeof str1);
+			console.log(typeof str2);
+			
+			//Number数值
+			 var num=123;
+			 console.log("num="+num);
+			 console.log(typeof num);
+			 
+			 /* 
+			   1.Number.MAX_VALUE 表示数字的最大值
+			   2.Number.MIN_VALUE 表示大于0的最小值
+			   3.数字超过最大值  返回一个Infinity 类型属于Number
+			   
+			 */
+			 var num2=Number.MAX_VALUE;
+			 console.log(num2);//1.7976931348623157e+308
+			 var num3=Number.MIN_VALUE;
+			 console.log(num3);//5e-324
+			var num4=Number.MAX_VALUE*Number.MAX_VALUE;
+			console.log(num4);//Infinity  无穷
+			console.log(-num4);//-Infinity   负无穷
+			
+			var num5=Infinity-1;
+			console.log( num5);
+		</script>
+	</body>
+</html>

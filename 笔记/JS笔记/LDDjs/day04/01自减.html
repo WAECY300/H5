@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			   自减：
+			     -通过自减可以使变量在自身的基础上减1
+				 -自减分两中情况：  前--  和后--
+				     -相同点：都会使变量自减1
+					 -不同点：前--的值等于自减后的值 后--的值等于自减前的值
+			 */
+			
+			var a=20;
+			//a--;
+			
+			//--a;
+		//console.log(a--);
+			//console.log(--a);
+			
+			// var n1=235;
+			// var n=n1--;
+			// console.log(n);
+			// console.log(n1);
+			
+			// n=--n1;
+			// console.log(n);
+			// console.log(n1);
+			
+			// var result=a-- + --a + a + --a;
+			//             //20    18   18   17
+			// var c=3;
+			// result=++c + --c + c + c++ + c-- + ++c + --c;
+			
+			var d=100;
+			result=d++ + --d - ++d - d + d-- - ++d + --d;
+			      // 101   100   101  101  101   101   100
+			      
+			console.log(result);
+		</script>
+	</body>
+</html>

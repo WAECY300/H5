@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			  相等   ==
+			    -用来比较符号俩侧的值是否相等，如果相等则返回true  反之为false
+			    -如果类型不同，则会自动转换类型，将其转换为相同类型然后比较
+				-
+			*/
+		    
+		 var result= 1==1;//true
+		 
+		 console.log(result);
+		 console.log(1=="1");//true
+		 console.log(true==1);//true
+		 console.log(null==0);//false
+		 console.log(false=="");//true
+		 console.log(null==0);//null转为NaN  false
+		 
+		// NaN 不与任何值相等 包括它本身
+		console.log(NaN==0);//false
+		console.log(NaN=="hello");//false
+		console.log(NaN==NaN);//false
+		// 如果想判断一个值是否是 NaN 使用isNaN()函数 如果是,则返回true.否则返回false
+		var b=123;//false
+		var b=NaN;//true
+		b=isNaN(b);      
+		console.log(b);
+		console.log(b);
+		
+		//undefined 衍生自null 所以俩个值做相等判断时返回true
+		console.log(undefined==null);
+		
+		/* 
+		   不相等  !=
+		      -用来比较俩个值是否不相等  如果不相等返回true  否则返回false
+		 */
+		console.log(123!="123");//false
+		console.log(null!=0);//true
+		
+		/* 
+		   全等 ===
+		     -用来比较俩个值是否全等，用法与==类似 
+			    不同点是全等不会做自动类型的转换，如果类型不同直接返回false
+		 */
+		console.log(123==="123");//false
+		console.log(undefined===null);//false
+		console.log(typeof null);//object
+			
+		/* 
+	         不全等  !==
+			   用来比较俩个值是否不全等，用法与!=类似
+			    不同点是不全等不会做自动类型的转换，如果类型不同则直接返回true
+				
+		 */
+		console.log(123!=="123");//true
+		console.log(undefined!==null);//true
+		</script>
+	</body>
+</html>

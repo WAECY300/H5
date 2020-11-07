@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			   JS中提供三种逻辑运算符
+			     ! 非
+				   -可以对一个值进行非运算
+				   -所谓的非运算就是对一个布尔值取反
+				   -对一个值进行俩次取反它不会发生变化
+				   -对非布尔的值进行非运算先转换为布尔 然后在进行取反
+				   
+				 && 与
+				    -可以对符号俩侧的值进行与运算
+					-如果俩个值中有一个为 false 则返回false 只有俩个值都为true时 才返回true
+					-非布尔类型做与运算时 先将其转换为布尔  但返回的是原值
+					      -如果俩个值都为true 则返回的是 最后一个true
+						  -如果俩个值都为false 则返回的是 第一个false
+						  -如果一个true 一个false 则返回的是false						  
+					
+				 || 或
+				    -可以对符号俩侧的值进行或运算  并返回结果
+					-如果俩个值中有一个为true  则返回true  只有俩个值都为false时，才返回false
+					-如果俩个值都为true  则返回的是第一个 true
+					-如果过俩个值都为false  则返回的是最后一个 false
+					-如果一个 true  一个false  则返回的是 true
+			 
+			 */
+			
+			var a=true;
+			//a=!a;
+			//a=!!a;
+			
+			//对非布尔值进行取反
+			a="123";
+			a="";
+			a=123;
+			a=0;
+			a=!a;		
+			//console.log(a);
+		
+			//与运算
+			var result=true&&true;
+			  result=true&&false;
+			  result=false&&true;
+			  result=false&&false;
+			  
+			  result=2&&"hello";
+			  result="hello"&&2;
+			  result=2&&"";
+			  result=null&&9;
+			  result=null&&NaN;
+			  result=NaN&&null;
+			  
+			  //或运算
+			  result=true||true;
+			  result=true||false;
+			  result=false||true;
+			  result=false||false;
+			  
+			  result=1||2;
+			  result=1||null;
+			  result=null||3;
+			  result=null||undefined;
+			  
+			console.log(result);
+			
+			//true&&alert("123");
+			//false&&alert("456");
+			//true||alert("789");
+			false||alert("000");
+			/* 
+			   && 与 || 是短路的与和或
+			   当 与(&&)运算时: 如果第一个值为true  则直接返回最后一个值
+			                   如果第一个值为 false  则直接返回 false
+			   当 或(||) 运算时:  如果第一个值为 true  则直接返回 true
+			                      如果第一个值为false  则直接返回最后一个值
+			 */
+			
+		</script>
+	</body>
+</html>

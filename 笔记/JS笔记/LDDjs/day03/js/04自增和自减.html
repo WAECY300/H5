@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			   自增：
+				  -可以使原变量在自身的基础上增加 1
+				  -对一个变量自增以后 原变量会立即增加 1
+				  -自增分俩种  后++  和 前++		
+					 -相同点：都会使原变量的值自增 1
+					 -不同点：后++的值等于原变量  前++的值等于原变量的新值
+			*/
+			
+			var a=5;
+			//a++;
+			//a++;
+			//++a;
+			//console.log(a);
+			//console.log(a++);//5
+			//console.log(++a);
+			var result=a++ + ++a + a;
+			console.log(result);
+			
+			var n1=10;
+			n=n1++;
+			console.log("n="+n);//10
+			console.log("n1="+n1);//11
+			n=++n1;
+			console.log("n="+n);//12
+			console.log("n1="+n1);//12
+			
+			var c=2;
+			result=c+ ++c + c++;
+			//      2  3    3
+			result=c++ +c + ++c;
+			      //4     
+			console.log(result);
+		</script>
+	</body>
+</html>

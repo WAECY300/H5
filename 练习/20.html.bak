@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>测试</title>
+ </head>
+ <body>
+
+             <b>十年荣耀君莫<del>邪</del><ins>笑</ins></b>
+
+			 //演示文字方向倒转效果
+			 <p>	
+			 <b><bdo dir="rtl">醉卧沙场君莫笑</bdo></b>
+			 </p>
+
+			<a id="1">有用的提示部分</a>
+			<a href="#1">访问有用的提示部分</a>
+
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			   将其他的数据类型转Boolean
+			     -调用Boolean函数
+				   -字符串转布尔  除了空串其他都是true
+				   -数值转布尔    除了0和NaN都是true
+				   -Null和Undefined都是false
+				   
+			 */
+			
+			var a="123";
+			a="123px";
+			a="   ";
+			a="";
+			a="0";
+			
+			//Number 转Boolean(布尔)
+			a=123;
+			a=-12;
+			a=23.323;
+			a=-3.14159;
+			a=0;
+			a=NaN;
+			a=Infinity;
+			//Null和Undefined
+			a=null;
+			a=undefined;
+			a=Boolean(a);
+			console.log(a);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+		<head>
+
+		<style>
+
+					body
+					{
+						background-size:cover;
+
+					}
+		</style>
+		<title>鬼灭之刃@^@</title>
+		</head>
+		
+
+			<body>
+
+			<img src="./../409.gif" alt="图片未加载成功，或者引入位置不准确" title="这是一个动态图片" width="100%" height="100%"/>
+			<hr/>
+
+			<h1>
+			<p>请开始你的表演</p>
+			<a href="www.jump300.com">点击登录</a>
+			<p><a href="17a.html">快来签订契约吧，少年！世界在等着你去拯救！</a></p>
+			</h1>
+			<hr/>
+
+			<p>华风夏韵-洛水天依</p><b>
+			<p>十年荣耀，一如既往</p>
+			<p>龙翼振风雨，牙音撤天鸣</p>
+			<hr/>
+
+            <!-- ol 有序列表 -->
+			<ol>
+					<li>----1</li>
+					<li>----2</li>
+					<li>----3</li>
+			</ol>
+			<hr/>
+
+			<!-- 		无序列表 -->
+			<ul>
+					<li>300教科书</li>
+					<li>荣耀散人</li>
+					<li>十区噩梦</li>
+			</ul>
+			<hr/>
+
+
+			<dl>
+							<dd>临</dd>
+							<dd>兵</dd>
+							<dd>斗</dd>
+							<dd>者</dd>
+			<dl>
+			</hr>
+
+			</body>
+</html>

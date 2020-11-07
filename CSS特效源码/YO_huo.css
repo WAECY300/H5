@@ -1,0 +1,89 @@
+/*
+normalliz.css   正常的文档配置
+
+该CSS文件用于处理css重置属性
+*/
+
+/*    有货--css样式 */
+
+#nav_box{
+			width:1000px;
+			background:black;
+			margin:0 auto;
+			height:65px;
+}
+#nav_box ul li,#nav_box ol li{
+			float:left;
+}
+#nav_box ul{
+			width:1000px;
+			height:34px;
+			background-color:#0d0d0d;
+}
+#nav_box ul li{
+			padding:2px 2px 0;
+			line-height:30px;
+			border-right:1px solid rgba(255,255,.5);
+			position:relative;/*用来改变div的位置*/
+}
+#nav_box ul li a{
+			color:white;
+			display:block;
+			padding:0 20px 2px 10px;
+			font-size:14px;
+			position:relative;
+}
+#nav_box ul li a::after{
+			content:'....';
+			display:block;
+			line-height:0;
+			width:0
+			border:3px solid transparent;
+			border-top-color:rgba(0,0,0,.3);
+			position:absolute;
+			right:7px;
+			top:50%;
+			margin-top:-1px;
+}
+#nav_box ul li.none a::after{
+			border:none;
+}
+#nav_box ul li div{
+			width:200px;
+			border:2px solid black;
+			height:100px;
+			background-color:white;
+			border-top:none;
+			border-bottom:none;
+			position:absolute;
+			left:0
+			top:34px;
+}
+#nav_box ul li:hover{
+			border-color:transparent;
+}
+#nav_box ul li:hover a{
+			color:black;
+			background-color:white;
+}
+#nav_box ul li:hover a::after{
+			border-top-color:#000;
+}
+#nav_box ul li:hover div{
+			display:block;
+}
+
+*{
+	margin:0;
+	padding:0; 
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#666;
+}
+body{
+	background-color:#999;	
+}

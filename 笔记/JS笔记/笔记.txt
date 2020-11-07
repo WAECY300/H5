@@ -1,0 +1,306 @@
+01运算符
+        -运算符也叫操作符
+        -通过运算符可以对一个或多个值进行运算 并获取运算结果
+        -typeof就是运算符 可以来获得一个值的类型  将该值的类型以字符串的形式返回
+        	var a=123;
+	var result = typeof a;
+
+        -算数运算符
+	-当对非Number类型的值进行运算时 会将这些值转换为Number然后在运算
+	+ 可以对两个值进行加法运算 并将结果返回
+	        a+1;
+	        result = a+1;
+	        result = 456+789;
+	        result = true+1;
+	        result = true+false
+	        result = 2+null;
+	-任何值与NaN运算都是NaN
+	        result = 2+NaN;
+	-如果对两个字符串进行加法运算 则会做拼串 会将两个字符串拼接为一个字符串 并返回
+	        result = ‘123’+‘456’;
+	        result = ‘你好’+‘世界’
+	        result='锄禾日当午 汗滴禾下土 谁知盘中餐 粒粒皆辛苦'
+	-任何值和字符串做加法运算 都会先转换为字符串 然后在和字符串做拼串操作
+	        result=123+hello
+	        result = ture +hello
+	-为任意数据类型加上一个空串 即可将其转换为String 是一种隐式的类型转换
+	        var c=123;
+	        c=c+'';
+	        result=1+2+'3'
+	        result='1'+2+3
+	- 可以对两个值进行减法运算 并将结果返回
+	        var b=100-5;
+	        b=100-true;
+	        b=100-'1';
+	* 可以对两个值进行乘法运算
+		var c =2*2
+		c=2*'8'
+		c=2*undefined
+		c=2*null
+	/ 可以对两个值进行除法运算
+		var d=4/2
+		d=3/2
+	        -任何值做- * /运算 都会自动转换为Number 
+	        -通过-0 *1 /1来将其转换为Number
+		d=‘123’;
+		d=d/1;	
+	%取模运算 取余数
+		var e=9%3
+		e=9%4
+		e=9%5
+	
+        一元运算符 只需要一个操作数
+	+正号
+	        正号不会对我们的数字产生任何影响
+		var a=123;
+		a=+a;
+	-负号
+	        负号可以对数字进行负号的取反
+		a=-a;
+	-对非Number类型的值 他会将其先转换为Number在运算	
+		a=true;
+		a=-a;
+	-可以对一个其他数据类型使用+ 来将其转换为Number 原理与Number()函数原理一样
+		a='18'
+		a=-a;
+		var result=1++'2'+3;
+        -自增和自减
+	-自增++
+	        -通过自增可以使变量在自身的基础上增加1
+	        -对于一个变量自增以后 原变量的值会立即自增1
+	        -自增分两种 后++和前++ 
+		无论是前++或后++都会立即使原变量的值自增1
+		不同的是后++和前++的值不同
+		a++的值等于原变量的值
+		++a的值等于原变量的新值
+		var a=1;
+		a=a+1;
+		//console.log(a); 
+		
+		a++;//使a自增1
+		a++;
+		a++;
+		console.log(a); 
+
+		++a;
+		++a;
+		console.log(a); 
+
+		console.log(a++); 
+		console.log(++a); 
+		
+		var c=10;
+		c++
+		console.log(c++); 
+			
+		案例：d++ + ++d + d
+	-自减
+	        -通过自减可以使变量在自身的基础上减去1
+	        -自减分成两种 后--和前--
+		不论是前-- 还是后--都会立即使原变量的值自减1
+		不同的是后--和前--的值不同
+		a--是变量的原值
+		--a是变量的新值
+		var num=10;
+		num--;
+		--num
+		console.log(num); 		
+	-逻辑运算符
+	        -js中为我们提供三种逻辑运算符
+	        ！非
+		-！可以用来对一个值进行非运算
+		-所谓非运算就是值对一个布尔值进行取反操作
+		        true变false  false变true
+		var a=true;
+		//对a进行非运算
+		a=!a;
+		console.log(a);
+		-如果对一个进行两次取反 它不会变化
+		a=!!a;
+		console.log(a);
+		-如果对非布尔值进行运算 则会将其转换为布尔值然后在取反
+		        利用该特点 将一个其他的数据类型转换为布尔值
+		        可以为一个任意类型取两次反 将其转换为布尔值
+		var b=10;
+		b=!b;
+		console.log(b);
+		console.log(typeof b);
+	        && 与
+		-可以对符号两侧的值进行与运算并返回结果
+		-运算规则 两个值中只要一个值为false就返回false 只有两个值都为true 才会返回true
+		//如果两个值都是true则返回true
+		var result=true&&true;
+		console.log(result);
+		//只要有一个false 就返回false
+		 result=true&&false;
+		 result=false&&true;
+ 		 result=false&&false;
+		 console.log(result);
+		-JS中的与为短路的与 如果第一值为false 则不会看第二个值
+		true&&alert();//检查第二个
+		false&&alert();//不会检查第二个
+	        || 或
+		-可以对符号两侧的值进行或运算并返回结果
+		-运算规则
+		       -两个值中只要有一个true 就返回true
+		       -如果两个都为false 才返回false
+		//两个都是false 则返回false
+		result=false||false;
+		//只要有一个true 则返回true
+		result=false||true;
+		result=true||false;
+		result=true||true;
+		 console.log(result);
+		-JS中的或为短路的或 如果第一值为true 则不会看第二个值
+		true&&alert();//不检查第二个
+		false&&alert();//会检查第二个
+	
+		-非布尔值的与和或
+		        -会将其转换为布尔值 然后在运算 并且返回原值
+			var result=1&&2;
+			console.log(result);
+			-如果两只都为true 则返回后边的
+			result=0&&2;
+			console.log(result);
+			-如果两个值有false 则返回靠前的false
+		        	result=0&&NaN;
+			console.log(result);
+		        -运算规则
+			-如果第一个值为true 则必然返回最后一个值
+			-如果第一个值为false 则直接返回第一个值
+			
+			result=1||2;
+			//如果第一个值true 则直接返回第一个值
+			result=nan || 1
+			//如果子一个值为false  则直接返回第二个值
+		        -运算规则
+			-如果第一个值为true 则直接返回最后一个值
+			-如果第一个值为false 则返回第二个值
+	-赋值运算符=
+	       -可以将符号右侧的值赋值给符号左侧的变量
+	       -  =
+		var a=123;
+		console.log(a);
+
+	        -   +=
+		var b=10;
+		b=b+5;
+		b+=5;
+		console.log(b);
+	        -  -=
+		b-=5;
+		console.log(b);
+	        -  *=
+		b*=5;
+		console.log(b);
+	        -  /=
+		b/=5;
+		console.log(b);
+	        -  %=
+		b%=5;
+		console.log(b);
+
+	-关系运算符
+	        -通过关系运算符可以比较两个值之间的大小关系 如果关系成立会返回true 如果关系不成立则返回false
+	        - >大于号
+		-判断符号左侧的值是否大于右侧的
+		-如果关系成立 返回true 如果关系不成立返回false
+	        	result=5>10;
+		result=5>4;
+		console.log(result);
+	        - >=大于等于
+		-判断符号左侧的值是否大于或等于右侧值
+		-如果关系成立 返回true 如果关系不成立返回false
+	        	result=5>=10;
+		result=5>=4;
+		console.log(result);
+	        - <小于号
+		-判断符号左侧的值是否小于右侧的
+		-如果关系成立 返回true 如果关系不成立返回false
+	        	result=5<10;
+		result=5<4;
+		console.log(result);
+	        - <=小于等于
+		-判断符号左侧的值是否小于或等于右侧值
+		-如果关系成立 返回true 如果关系不成立返回false
+	        	result=5<=10;
+		result=5<=4;
+		console.log(result);
+	        -非数值的情况
+		-对于非数值比较时 会将其转换为数字在比较
+		console.log(1>true);
+		console.log(1>=true);
+		console.log(1>"0");
+		console.log(1>null);
+		-任何值和nan做比较都是false
+		console.log(1>"hello");
+		-如果符号两侧的值都是字符串  不会将其转换数字进行比较 
+		会分别比较字符串中字符的Unicode编码
+		console.log(“1”<"5");
+		console.log(“11”<"5");
+		console.log(“a”<"b");
+		-如果比较的两个字符串型的数字 可能会得到不可预期的结果
+		-注意 比较两个字符串型的数字时 一定要转型
+		console.log(“1112312321”<+"5");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 

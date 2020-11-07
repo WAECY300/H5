@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			 强制类型转换：
+			    -将一个数据类型强制转换为其他的数据类型
+				-所谓的强制转换 就是转换为 String  Number Boolean
+			 */
+			
+			/* 
+			 将其他的数据类型转换为String
+			    -调用被转数据类型的toString()方法
+				   1.调用xxx的yyy()方法  就是xxx.yyy()
+				   2.该方法不影响原变量 会将转换的结果返回
+				   3.null 和Undefined 没有toString()方法
+				-调用String()函数  将被转数据类型作为参数传递给函数
+				   1.对于Number和Boolean来说  toString()和String()函数一样
+				   2.null和undefined使用String()函数直接转换为"null"和"undefined"
+				   
+				
+				
+			 */
+			var a=123;
+			//a="123";//赋值
+			
+			a=true;
+			a=a.toString();
+			
+			//a=null;
+			//a=a.toString();
+			
+			//a=undefined;
+			//a=a.toString();
+			
+			var b=123;
+			b=false;
+			b=null;
+			b=undefined;
+			var c=String(b);
+			/* 
+			   将其他数据类型转换为Number
+			      -调用函数Number()函数
+				       1.如果是纯数字的字符串  直接转换为数字
+					   2.如果含有非数字的字符串  则转换为NaN
+					   3.如果字符串是空串或全是空格的字符串  则转换为0
+					   4.布尔转数字 true转1  false 转0
+					   5.Null 类型转数字为0  
+					   6.Undefined  类型转数字为NaN
+				   -parseInt() 把一个字符串转换为一个整数  将有效的整数内容取出来
+				   -parseFloat() 把一个字符串转换为一个浮点数  将有效的浮点数内容取出来
+				   -如果对非 String使用parseFloat 则会先将其转换为String  在进行操作
+			 */
+			b="123456";
+			b="abcdefg";
+			b="123abc";
+			b="123.456";
+			b="";
+			b="   ";
+			
+			b=true;
+			b=false;
+			
+			b=null;
+			b=undefined;
+			b=Number(b);
+			
+			c="123px";
+			c="a123px5456";
+			c="123.789px333";
+			c="123.789.456";
+			
+			c=true;
+			//c=parseInt(c);
+			c=parseFloat(c);
+			console.log(c);
+			console.log(typeof c);
+			
+			//console.log(a);
+			//console.log(typeof a);
+		</script>
+	</body>
+</html>

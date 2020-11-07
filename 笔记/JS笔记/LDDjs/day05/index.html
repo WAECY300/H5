@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			    1、自减--
+				    -可以使变量在自身的基础上减1
+					-分前--   和后--  
+					-都可以是变量自增1
+					-前--的值是自建之后的值，后--是自减之前的值
+				2、逻辑运算符是
+				-  ！&& ||
+				-  ！对一个值进行非运算
+				    -对布尔值进行取反
+					-可以对一个值进行俩次取反  他不会发生变化
+					-对非布尔值进行非运算  先转换为布尔  然后进行取反
+					-隐式类型转换 利用俩次取反 将其他的数据类型转换为Boolean
+			   -&&  对符号俩侧的值进行与运算
+			      -俩个值中只要有一个false就返回false  俩个值都为true才返回true
+				  --对非布尔类型进行与运算时，先转换为布尔 但返回的是原值
+				  -&&是短路与  如果第一个值为false直接返回  如果第一个值为true
+				    返回最后一个值
+			   -||  对符号俩侧的值进行或运算  并返回结果
+			      -如果俩个值中有一个true  则返回true，只有俩个值都为false，才返回false
+				  -对非布尔进行或(||)运算 先转布尔  然后返回原值
+				  -|| 是短路，如果第一个值为true 则直接返回，
+				     如果第一个值为false 则直接返回最后一个值
+				
+				3、赋值运算符
+				    -  =  将符号右侧的值赋值给左侧的变量
+					-  +=   -+   *=    /=  %=
+				4、关系运算符：
+				   -通过关系运算符比较俩个值的大小关系，如果成立，返回true，反之，返回false
+				   - > >=   <  <=
+				   -
+			 */
+			
+			// > 判断符号左侧的值是否大于右侧的值,如果大于,返回true,否则返回false
+			 
+			 var a=10;
+			 console.log(a>13);//false
+			 console.log(a>5);//true
+		
+		//   >= 判断符号左侧的值是否大于等于右侧的值,如果成立返回true 不成立,返回false
+		    console.log(a>=10);
+			console.log(a>=20);
+			
+		// < 判断符号左侧的值是否小于右侧的值,如果小于,返回true,否则返回false	
+		// <= 判断符号左侧的值是否小于等于右侧的值,如果成立返回true 不成立,返回false
+		
+		//非数值 先转换为数字在比较
+		   console.log(true>false);//true
+		   console.log(true>1);//false
+		   console.log(12>=12);//true
+		   
+	//  任何值与NaN作比较都返回false
+	    console.log(NaN<=0);//false
+		console.log(NaN>"HELLO");//false
+		console.log(NaN>null);//false
+		
+	// 当俩侧的值是字符串时,不是转换为数值,而是转换为Unicode编码
+	  console.log("ab">"aac");//true
+	  console.log("123">"45");//false
+	  
+		
+		   
+			 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			  if 条件件判断语句
+			     -if(条件表达式){语句}
+				 	    if语句在执行时 会先对条件表达式进行求值判断
+				 		如果条件表达式的值为true 则执行if后的语句
+				 		如果条件表达式的值为false 则不会执行if后的语句
+			    
+				 -if(条件表达式){语句1}else{语句2}
+				      -if...elae...语句
+				     当该语句执行时 会先对if后的条件表达式进行求值判断
+				      如果该值true则执行if后的语句 如果该值为false则执行else后的语句
+                 
+				 -if(条件表达式1){
+					 语句1
+				 }else if(条件表达式2){
+					 语句2
+				 }else if(条件表达式3){
+					 语句块3
+				 }else{语句块4}
+				        当该语句执行时 会从上到下依次对我们的条件表达式进行判断
+						  如果值为true则执行当前语句 如果值为false则继续向下判断
+						  如果所有的条件都不满足 则执行最后一个else后的语句
+						  该语句中 只会有一个代码块被执行 一旦代码块执行了则直接结束语句
+		 
+		 
+			 */
+			
+			/* 
+			 	①从键盘输入小明的期末成绩
+			 	    当成绩为100时 奖励一辆BMW
+			 	    当成绩为80-99时 奖励一台iPhone15s
+			 	    当成绩为60-80时 奖励一本参考书
+			 	    其他时 什么奖励也没有
+			 
+			 	②男大当婚 女大当嫁 那么女方家长要嫁女 当然要提出一定的条件
+			 	    高：180cm以上 富：1000万以上 帅：500以上
+			 	    如果这三个条件同时满足 则一定嫁他
+			 	    如果三个条件有为真的情况 则嫁吧  比上不足 比下有余
+			 	    如果三个条件都不满足 则不嫁
+			 
+			 	③编写程序 由键盘输入三个整数 分别存入变量num1 num2 num3
+			 	    对他们进行排序 并且从小到大输出
+			 */
+			
+			// var cj=prompt("请输入小明的成绩(0-100): ");
+			// if (cj<0 || cj>100){
+			// 	alert("请重新输入：")
+			// }else{
+			//   if(cj==100){
+			// 	  alert("奖励一台宝马！！！")
+			//   }else if(cj>=80 /*&& cj<=99*/){
+			// 	  alert("奖励一部手机")
+			//   }else if(cj>=60 /*&& cj<=80*/){
+			// 	  alert("奖励一本书");
+			//   }else{
+			// 	  alert("奖励一个大嘴巴子！！！");
+			//   }
+			//      }
+				 
+				 var num1=prompt("请输入第一个整数：");
+				 var num2=prompt("请输入第二个整数：");
+				 var num3=prompt("请输入第三个整数：");
+				if(num1<num2 && num1<num3){
+					if(num2<num3){
+						console.log(num1+"   "+num2+"  "+num3);
+					}else{
+						console.log(num1+"  "+num3+"   "+num2);
+					}
+				}else if(num2<num1 && num2<num3){
+					if(num1<num3){
+						console.log(num2+"  "+num3+"  "+num1);
+					}else{
+						console.log(num2+"  "+num1+"  " +num3);
+					}
+				}else{
+					if(num1<num2){
+						console.log(num3+"  "+num2+"  "+num1);
+					}else{
+						console.log(num3+"  "+num1+"  "+num2);
+					}
+			
+				}
+				 
+				 
+				 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <div ></div>
+    <input type="text" name = "aaa">
+    <p class="wrap"></p>
+    <p class="wrap"></p>
+    <p class="wrap"></p>
+    <script>
+        // document.getElementById("id属性的值");
+        // document.getElementsByTagName("标签的名字");
+        // document.getElementsByName("name属性的值");
+        // document.getElementsByTagName("标签的名字");
+        // document.getElementsByClassName("类样式的名字");
+        document.getElementById("box");
+        document.getElementsByTagName("div");
+        document.getElementsByName("name属性的值");
+        document.getElementsByName("aaa");
+        document.getElementsByClassName("wrap");
+        // get -> 获取
+        // Element -> 元素 
+        // By ->通过 
+        // Id -> id的值 
+        //TagName-> 标签名
+        // name ->对应的值 
+       // console.log(  document.getElementsByClassName("wrap"))
+        var odiv = document.getElementById("box");
+           // console.log(odiv)
+
+            //document.querySelector("选择器");
+            //document.querySelectorAll("选择器");
+        var op = document.querySelector(".wrap");
+        var ops = document.querySelectorAll(".wrap")
+        console.log(op)
+        console.log(ops)
+    </script>
+</body>
+</html>

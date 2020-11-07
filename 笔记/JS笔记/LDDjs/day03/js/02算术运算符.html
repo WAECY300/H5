@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* 
+			   算术运算符  +  -  *  / %
+			      -对非Number 类型进行运算时 先将其转换为Number 在进行运算
+				  -任何值与NaN运算结果都是NaN  
+				  -
+			     
+			 */
+			//+号  可以对俩个值进行运算  并返回结果
+			var a=10;
+			var result=a+10;
+			result=10+39;
+			result=3+true;
+			result=true+false;
+			result=1+null;
+			result=false+null;
+			
+			
+			result=1+NaN;
+			result=true+NaN;
+			result=null+NaN;
+			result=undefined+NaN;//  NaN
+			
+			result=1+undefined;//NaN
+			
+			//任何数据类型与字符串做加法运算  将其转换为字符串  然后做拼串处理
+			result=1+"123";
+			result="abc"+"bcd";
+			result="快点下课吧"+"咋还不打铃";
+			
+			result=1+2+"3";//33
+			result=1+"2"+3;//123
+			
+			//为任意类型加上一个空串  即会将其转换为String  是一种隐式类型的转换
+			result=null+"";
+			
+			//-号  可以对俩个值进行减法运算  并返回结果
+			result=100-7;
+			result=100-true;
+			result=100-"1";
+			result=100-undefined;//NaN
+			result=100-null;
+			
+			// * 号 可以对俩个值进行乘法运算  并返回结果
+			result=3*4;
+			result=1*false;
+			result=3*null;
+			result=3*undefined;
+			
+			//  / 号  可以对俩个值进行除法运算 并返回结果
+			result=1/3;
+			result=0/true;
+			result=true/false;
+			result="456"/7;
+			result="abc"/10;//NaN
+			//总结:通过-0 *1 /1 将其他的数据类型转换为 Number 
+			
+			//  %  取模运算  取余
+			result=9%2;
+			result=2%9;
+			console.log(result);
+			console.log(typeof result);
+		</script>
+	</body>
+</html>

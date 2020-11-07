@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>哼哼！！！</title>
+  <style>
+/* 				body{
+						background-image:url("./../76.gif");
+						background-size:cover;
+				} */
+		
+				
+					a:link{color:green} 未访问过的链接
+					a:visited{color:red} /*访问过的链接，判断你是否访问过该链接 */
+					a:hover{color:black} /* 鼠标悬停的状态 */
+					a:active{color:white} /*被点击的状态（被激活的状态） */
+  </style>
+ </head>
+ <body>
+				<hr/>
+				<img  src="./../f371.gif" alt="你看不到我~看不到我~看不到我~~~" title="水之呼吸-丗瘗襹！！！"  width="30%" height="20%"/>
+				<h1>
+				<p>
+				<a href="9-17.html">
+				com on!拯救成功！开始次元穿梭！！！
+				</a>
+				</p>
+				</h1>
+				</hr>
+
+				<img src="./../889.gif" alt="一般是不会出现的" title="哼哼哼~~~~~" width="30%" height="20%"/>
+				<hr style="color:black"/>
+
+				<h2>
+				<p style="color:red">OK~~为人类献出心脏！！！</p>
+				<p style="color:white">护吾之人，显其名。——夏目贵志《夏目友人帐》</p>
+				<a style="color:black">知识不能替代友谊，比起失去你，我宁愿做个白痴 。——派大星《海绵宝宝》</a>
+				<h2/>
+				<hr/>
+
+  
+ </body>
+</html>
